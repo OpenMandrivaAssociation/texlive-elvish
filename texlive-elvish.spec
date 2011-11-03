@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/elvish
+# catalog-date 2008-04-19 23:11:03 +0200
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-elvish
 Version:	20080419
 Release:	1
@@ -47,6 +53,7 @@ in teng.tex, or by the (better documented) tengtex package.
 %{_texmfdistdir}/fonts/tfm/public/elvish/teng10.tfm
 %doc %{_texmfdistdir}/doc/fonts/elvish/README
 %doc %{_texmfdistdir}/doc/fonts/elvish/teng.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ in teng.tex, or by the (better documented) tengtex package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
