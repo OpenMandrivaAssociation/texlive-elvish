@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-elvish
 Version:	20080419
-Release:	3
+Release:	4
 Summary:	Fonts for typesetting Tolkien Elvish scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/elvish
