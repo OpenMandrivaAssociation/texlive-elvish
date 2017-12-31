@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/elvish
-# catalog-date 2008-04-19 23:11:03 +0200
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-elvish
 Version:	20170414
 Release:	1
@@ -33,17 +27,9 @@ in teng.tex, or by the (better documented) tengtex package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/source/public/elvish/cirth.mf
-%{_texmfdistdir}/fonts/source/public/elvish/teng10.mf
-%{_texmfdistdir}/fonts/source/public/elvish/tengdev.mf
-%{_texmfdistdir}/fonts/source/public/elvish/tengmacs.mf
-%{_texmfdistdir}/fonts/source/public/elvish/tengmain.mf
-%{_texmfdistdir}/fonts/source/public/elvish/tengsecs.mf
-%{_texmfdistdir}/fonts/source/public/elvish/tengteht.mf
-%{_texmfdistdir}/fonts/tfm/public/elvish/cirth.tfm
-%{_texmfdistdir}/fonts/tfm/public/elvish/teng10.tfm
-%doc %{_texmfdistdir}/doc/fonts/elvish/README
-%doc %{_texmfdistdir}/doc/fonts/elvish/teng.tex
+%{_texmfdistdir}/fonts/source/public/elvish
+%{_texmfdistdir}/fonts/tfm/public/elvish
+%doc %{_texmfdistdir}/doc/fonts/elvish
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,17 +40,3 @@ in teng.tex, or by the (better documented) tengtex package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080419-2
-+ Revision: 751410
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080419-1
-+ Revision: 718325
-- texlive-elvish
-- texlive-elvish
-- texlive-elvish
-- texlive-elvish
-
