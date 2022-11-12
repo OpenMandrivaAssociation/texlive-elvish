@@ -1,12 +1,12 @@
 Name:		texlive-elvish
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Fonts for typesetting Tolkien Elvish scripts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/elvish
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/elvish.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/elvish.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/elvish.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/elvish.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,12 +18,12 @@ Tengwar (teng10.mf). The Tengwar fonts are supported by macros
 in teng.tex, or by the (better documented) tengtex package.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -33,7 +33,7 @@ in teng.tex, or by the (better documented) tengtex package.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
