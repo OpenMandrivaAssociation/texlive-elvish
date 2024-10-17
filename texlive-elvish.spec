@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Fonts for typesetting Tolkien Elvish scripts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/elvish
+URL:		https://www.ctan.org/tex-archive/fonts/elvish
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/elvish.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/elvish.doc.r%{version}.tar.xz
